@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./Spotify icons/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-options" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-options">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-options nav-options">
+              <img src="./Spotify icons/library_icon.png" alt="" />
+              <a href="#">Your Library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy, we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./Spotify icons/backward_icon.png" alt="" />
+            <img src="./Spotify icons/forward_icon.png" class="hide" alt="" />
+          </div>
+          <div class="sticky-nav-options">
+            <button class="badge hide">Explore Premium</button>
+            <button class="badge dark-badge">
+              <i id="download" class="fa-regular fa-circle-down"></i>Install App
+            </button>
+            <div class="sticky-nav-user">
+              <i class="fa-regular fa-bell bell"></i>
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </div>
+        </div>
+        <div class="heading-show">
+          <h2>Recently Played</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img
+              class="card-image"
+              src="./Spotify icons/ab67706c0000da84b8ebec0762ac9c76adb09347.jpg"
+              alt=""
+            />
+            <div class="card-content">
+              <p class="card-title">Arjit Sad Songs</p>
+              <p class="card-info">
+                Your daily updates of the most played tracks...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="heading-show">
+          <h2>Made For Nirmith Shettigar</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img
+              class="card-image"
+              src="./Spotify icons/card2img.jpeg"
+              alt=""
+            />
+            <div class="card-content">
+              <p class="card-title">Mahiye Jinna So..</p>
+              <p class="card-info">
+                India's Ultimate Love Playlist. Cover-Jawan
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img
+              class="card-image"
+              src="./Spotify icons/ab67706f000000024e0f270b8e968aae393328e2.jpg"
+              alt=""
+            />
+            <div class="card-content">
+              <p class="card-title">Trending Valent..</p>
+              <p class="card-info">
+                India's Ultimate Love Playlist. Cover-Jawan
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img
+              class="card-image"
+              src="./Spotify icons/card3img.jpeg"
+              alt=""
+            />
+            <div class="card-content">
+              <p class="card-title">Mere pass tum ho</p>
+              <p class="card-info">By Rajan</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/ashsique.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Aashiqui</p>
+              <p class="card-info">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/darshan.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Love Hits</p>
+              <p class="card-info">By Topsify India</p>
+            </div>
+          </div>
+        </div>
+        <div class="heading-show">
+          <h2>Charts</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/tamil.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Latest Tamil</p>
+              <p class="card-info">New Music from Kollywood. Cover : ...</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/telugu.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Hot Hits Telugu</p>
+              <p class="card-info">
+                Tune in to the Hottest Tracks of Tollywood! ...
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/hindi.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Hot Hits Hindi</p>
+              <p class="card-info">
+                Hottest Hindi music served here. Cover -...
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/punjabi.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Hot Hits Punjabi</p>
+              <p class="card-info">Catch the hottest Punjabi tracks with...</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img
+              class="card-image"
+              src="./Spotify icons/hot tamil.jpg"
+              alt=""
+            />
+            <div class="card-content">
+              <p class="card-title">Hot Hits Tamil</p>
+              <p class="card-info">
+                Tune into the Hottest tracks of Kollywood! ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="heading-show">
+          <h2>India's best</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/best1.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Punjabi 101</p>
+              <p class="card-info">Ultimate 101 Punjabi Hits with Diljit Dosanjh</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/best2.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Best of Rader In..</p>
+              <p class="card-info">
+                Top 50 tracks from RADAR India in 2023...
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/best3.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Bollywood Centr..</p>
+              <p class="card-info">
+                Bollywood Central, jab baje toh seedha dil ke...
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/best4.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">RAP 91</p>
+              <p class="card-info">India's Rap Scene. Cover-Raftaar</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img
+              class="card-image"
+              src="./Spotify icons/best5.jpg"
+              alt=""
+            />
+            <div class="card-content">
+              <p class="card-title">Tollywood Pearls</p>
+              <p class="card-info">
+                The finest set of Telugu music from the past 10...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="heading-show">
+          <h2>New & Trending</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/nt1.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">New Music Hindi</p>
+              <p class="card-info">
+                Dunki's first single is out, and we're have it on...
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/nt2.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Love Aaj kal (Ori..</p>
+              <p class="card-info">2020 . Pritam</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/nt3.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">New Music Fri..</p>
+              <p class="card-info">
+                New music from popular Hindi artists. Cover-...
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/nt4.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">New in Dance</p>
+              <p class="card-info">
+                Latest floor fillers to kickstart your party...
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/nt5.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Latest Love Tunes</p>
+              <p class="card-info">Let the romance blossom with these...</p>
+            </div>
+          </div>
+        </div>
+        <div class="heading-show">
+          <h2>Popular artists</h2>
+          <p>Show all</p>
+        </div>
+        <div class="card-container artists">
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/anirudh.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Anirudh Ravi</p>
+              <p class="card-info">Artist</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/arijit.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Arijit Singh</p>
+              <p class="card-info">Artist</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/pritam.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Pritam</p>
+              <p class="card-info">Artist</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/shreya.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Shreya Ghoshal</p>
+              <p class="card-info">Artist</p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-circle-play play"></i>
+            <img class="card-image" src="./Spotify icons/alka.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-title">Alka Yagnik</p>
+              <p class="card-info">Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-box">
+            <div class="footer-link">
+              <div id="company">
+                <a href="" id="footer-head">Company</a>
+                <a href="">About</a>
+                <a href="">Jobs</a>
+                <a href="">For the Record</a>
+              </div>
+              <div id="Communities">
+                <a href="" id="footer-head">Communities</a>
+                <a href="">For Aritists</a>
+                <a href="">Developers</a>
+                <a href="">Advertising</a>
+                <a href="">Investors</a>
+                <a href="">Vendors</a>
+              </div>
+              <div id="useful-link">
+                <a href="" id="footer-head">Useful links</a>
+                <a href="">Support</a>
+                <a href="">Free Mobile App</a>
+              </div>
+            </div>
+            <div class="footer-media">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+          <div class="line-box">
+            <div class="footer-content">
+              <div class="essential-link">
+                <a href="">Legal</a>
+                <a href="">Privacy Center</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookies</a>
+                <a href="">About Ads</a>
+                <a href="">Accessibility</a>
+              </div>
+              <div class="copyright">&copy; 2023 Spotify AB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="album">
+          <img src="/CSS/Spotify Clone/Spotify icons/12th fail album.jpg" alt="" class="album-picture">
+          <div class="about-song">
+            <p id="song-title">Bolo Na</p>
+            <p id="song-info">Shantanu Moitra,Shreya Ghoshal</p>
+          </div>
+          <img src="./Spotify icons/album_icon1.png" alt="" class="like-song">
+        </div>
+        <div class="player">
+          <div class="player-controls">
+            <img src="./Spotify icons/player_icon1.png" alt="" class="player-contorl-icon">
+            <img src="./Spotify icons/player_icon2.png" alt="" class="player-contorl-icon">
+            <img src="./Spotify icons/player_icon3.png" alt="" class="player-contorl-icon play-button">
+            <img src="./Spotify icons/player_icon4.png" alt="" class="player-contorl-icon">
+            <img src="./Spotify icons/player_icon5.png" alt="" class="player-contorl-icon">
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00:48</span>
+            <input type="range" min="0" max="100" step="1" value="0" name="" id="" class="progress-bar" >
+            <span class="tot-time">3:33</span>
+          </div>
+        </div>
+        <div class="controls">
+          <img src="./Spotify icons/controls_icon1.png" alt="">
+          <img src="./Spotify icons/controld_icon2.png" alt="">
+          <img src="./Spotify icons/controls_icon3.png" alt="" class="make-small">
+          <img src="./Spotify icons/controls_icon4.png" alt="" class="make-smaller">
+          <label for="volume"><img src="./Spotify icons/controls_icon5.png" alt=""></label>
+          <input type="range" value="0" min="0" max="100" step="1" value="100" name="volume" id="">
+          <img src="./Spotify icons/album_icon2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
